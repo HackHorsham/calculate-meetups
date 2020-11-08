@@ -30,4 +30,6 @@ var getFutureEvents = function (dateAsString, futureEventsQuantity) {
     return events;
 };
 exports.getFutureEvents = getFutureEvents;
+var events = getFutureEvents("JAn 1 2021", 12);
+events.forEach(function (e) { return console.log(e.toString()); });
 //# sourceMappingURL=index.js.map

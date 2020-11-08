@@ -1,10 +1,11 @@
 {
-  "name": "calc_next_meetup",
+  "name": "calculate-meetups",
   "version": "1.0.0",
-  "main": "src/index.ts",
-  "author": "philstenning@hotmai.com",
-  "license": "MIT",
+  "main": "build/index.js",
+  "author": "Phil Stenning",
+  "license": "ISC",
   "private": false,
+  "url":"https://github.com/HackHorsham/calculate-meetups.git",
   "scripts": {
     "start": "ts-node ./src/index.ts",
     "watch": "nodemon",
