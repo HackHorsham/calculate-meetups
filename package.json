@@ -1,11 +1,19 @@
 {
   "name": "calculate-meetups",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "build/index.js",
   "author": "Phil Stenning",
+  "description": "Calculate the meetup dates for Hack Horsham",
   "license": "ISC",
   "private": false,
-  "url":"https://github.com/HackHorsham/calculate-meetups.git",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HackHorsham/calculate-meetups.git"
+  },
+  "bugs": {
+    "url": "https://github.com/HackHorsham/calculate-meetups"
+  },
+  "homepage": "https://github.com/HackHorsham/calculate-meetups",
   "scripts": {
     "start": "ts-node ./src/index.ts",
     "watch": "nodemon",
