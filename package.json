@@ -1,6 +1,6 @@
 {
   "name": "calculate-meetups",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "build/index.js",
   "author": "Phil Stenning",
   "description": "Calculate the meetup dates for Hack Horsham",
@@ -17,9 +17,10 @@
   "scripts": {
     "start": "ts-node ./src/index.ts",
     "watch": "nodemon",
-    "test": "jest  --notify"
+    "test": "jest  --notify",
+    "build":"tsc"
+
   },
-  "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.11.6",
     "@babel/preset-env": "^7.11.5",
