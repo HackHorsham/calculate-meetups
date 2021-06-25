@@ -4,7 +4,7 @@
  * @returns {Date}
  */
 function calculateNextEvent(startDateAsString: string): Date {
-  let dateToCheck = new Date(startDateAsString);
+  const dateToCheck = new Date(startDateAsString);
 
   if (dateToCheck.getDate() >= 14) {
     const month = dateToCheck.getMonth();
@@ -35,9 +35,9 @@ function calculateNextEvent(startDateAsString: string): Date {
  * @param {number} futureEventsQuantity - an Integer for the amount of dates that you want to be returned
  * @returns {Date[]}
  */
-const getFutureEvents = (startDateAsString: string, futureEventsQuantity = 1) => {
+const getFutureEvents = (startDateAsString: string, futureEventsQuantity = 1):Date[] => {
   const events: Array<Date> = [];
-  let date = new Date(startDateAsString.trim());
+  const date = new Date(startDateAsString.trim());
   for (let n = 0; n < futureEventsQuantity; n++) {
     /**
      * pass in a date string not a Date()

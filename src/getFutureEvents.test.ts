@@ -1,4 +1,4 @@
-import {calculateNextEvent} from '../src/index'
+import {calculateNextEvent} from './index'
 
 
 test('Nov 2020',()=>{
