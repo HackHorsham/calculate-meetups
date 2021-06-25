@@ -1,4 +1,5 @@
-const {calculateNextEvent}= require('../build/index') 
+import {calculateNextEvent} from '../src/index'
+
 
 test('Nov 2020',()=>{
     const c =calculateNextEvent('nov 1 2020')

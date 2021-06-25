@@ -1,12 +1,15 @@
 {
   "name": "calculate-meetups",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "build/index.js",
   "author": "Phil Stenning",
   "description": "Calculate the meetup dates for Hack Horsham",
   "license": "ISC",
   "private": false,
   "types": "build/index.d.ts",
+  "files": [
+    "build/**/*"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/HackHorsham/calculate-meetups.git"
@@ -19,15 +22,19 @@
     "start": "ts-node ./src/index.ts",
     "watch": "nodemon",
     "test": "jest  --notify",
-    "build":"tsc"
-
+    "build": "tsc",
+    "prepare": "npm run build",
+    "lint": "eslint . --ext .ts"
   },
   "devDependencies": {
     "@babel/core": "^7.11.6",
     "@babel/preset-env": "^7.11.5",
     "@babel/preset-typescript": "^7.10.4",
     "@types/jest": "^26.0.14",
+    "@typescript-eslint/eslint-plugin": "^4.28.0",
+    "@typescript-eslint/parser": "^4.28.0",
     "babel-jest": "^26.5.2",
+    "eslint": "^7.29.0",
     "jest": "^26.5.2",
     "nodemon": "^2.0.4",
     "ts-jest": "^26.4.1",
