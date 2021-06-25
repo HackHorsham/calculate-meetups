@@ -6,6 +6,7 @@
   "description": "Calculate the meetup dates for Hack Horsham",
   "license": "ISC",
   "private": false,
+  "types": "build/index.d.ts",
   "repository": {
     "type": "git",
     "url": "https://github.com/HackHorsham/calculate-meetups.git"

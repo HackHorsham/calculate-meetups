@@ -1,8 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.calculateNextEvent = exports.getFutureEvents = void 0;
-function calculateNextEvent(dateAsString) {
-    var dateToCheck = new Date(dateAsString);
+function calculateNextEvent(startDateAsString) {
+    var dateToCheck = new Date(startDateAsString);
     if (dateToCheck.getDate() >= 14) {
         var month = dateToCheck.getMonth();
         dateToCheck.setDate(1);
@@ -18,10 +18,10 @@ function calculateNextEvent(dateAsString) {
     return dateToCheck;
 }
 exports.calculateNextEvent = calculateNextEvent;
-var getFutureEvents = function (dateAsString, futureEventsQuantity) {
+var getFutureEvents = function (startDateAsString, futureEventsQuantity) {
     if (futureEventsQuantity === void 0) { futureEventsQuantity = 1; }
     var events = [];
-    var date = new Date(dateAsString.trim());
+    var date = new Date(startDateAsString.trim());
     for (var n = 0; n < futureEventsQuantity; n++) {
         var event_1 = calculateNextEvent(date.toDateString());
         events.push(event_1);
